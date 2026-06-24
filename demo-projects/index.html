@@ -654,14 +654,53 @@
     }
 
     .reveal {
-      opacity: 0;
-      transform: translateY(18px);
+      opacity: 1;
+      transform: none;
       transition: opacity 500ms ease, transform 500ms ease;
     }
 
     .reveal.visible {
       opacity: 1;
       transform: none;
+    }
+
+    @media (max-width: 700px) {
+      .hero-grid,
+      .search-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-panel,
+      .toolbar {
+        display: grid;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .quote-meta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .quote-nav {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .filters {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .filters::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     @media (max-width: 960px) {
@@ -788,7 +827,7 @@
           </div>
         </div>
 
-        <aside class="hero-panel reveal">
+        <aside class="hero-panel reveal visible">
           <div class="hero-stats">
             <div class="hero-stat">
               <strong id="totalCount">13</strong>
@@ -820,7 +859,7 @@
 
     <section class="toolbar-wrap">
       <div class="container">
-        <div class="toolbar reveal">
+        <div class="toolbar reveal visible">
           <div class="search-row">
             <label class="search-wrap" for="searchInput">
               <i class="fa-solid fa-magnifying-glass"></i>
