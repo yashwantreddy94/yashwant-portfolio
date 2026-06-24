@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Demo Projects — B Yashwant Reddy</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
@@ -686,6 +687,17 @@
       text-decoration: underline;
     }
 
+    .brand-mark {
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 0.9rem;
+      background: var(--color-text);
+      color: var(--color-text-inverse);
+      display: grid;
+      place-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
     @media (max-width: 700px) {
       .topnav { padding: 0 16px; }
       .topnav-right .topnav-link:first-of-type { display: none; }
@@ -704,7 +716,20 @@
 
 <nav class="topnav">
   <a class="topnav-logo" href="../index.html">
-    <div class="logo-icon">BYR</div>
+    <!-- <div class="logo-icon">BYR</div> -->
+    <span class="logo-icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Large Y -->
+          <path d="M4 4H7L12 10L17 4H20L13.5 12V20H10.5V12L4 4Z"
+                fill="currentColor"/>
+          <!-- Small R -->
+          <path d="M13.5 11.5H17C18.4 11.5 19.5 12.3 19.5 13.8
+                  C19.5 15 18.8 15.8 17.6 16.1L20 19H18.2
+                  L16 16.4H15V19H13.5V11.5Z"
+                fill="currentColor"/>
+        </svg>
+      </span>
     <div class="logo-text">
       <span class="logo-name">B Yashwant Reddy</span>
       <span class="logo-tag">Demo Projects</span>
