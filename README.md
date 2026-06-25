@@ -85,6 +85,8 @@ portfolio/
 **B Yashwant Reddy**  
 Guwahati, Assam, India  
 yashwantreddy94@gmail.com
+GitHub: https://github.com/yashwantreddy94
+LinkedIn: https://www.linkedin.com/in/yashwant-reddy-35726b1aa/
 
 ***
 
