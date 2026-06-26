@@ -984,7 +984,7 @@
         <aside class="hero-panel reveal visible">
           <div class="hero-stats">
             <div class="hero-stat">
-              <strong id="totalCount">13</strong>
+              <strong id="totalCount">17</strong>
               <span>Projects</span>
             </div>
             <div class="hero-stat">
@@ -1019,15 +1019,18 @@
               <i class="fa-solid fa-magnifying-glass"></i>
               <input type="text" id="searchInput" placeholder="Search by project name, category, or use case..." oninput="filterCards()" />
             </label>
-            <div class="result-meta">Showing <span id="countLabel">13</span> projects</div>
+            <div class="result-meta">Showing <span id="countLabel">17</span> projects</div>
           </div>
 
           <div class="filters">
             <button class="filter-btn active" onclick="setFilter('all',this)">All</button>
             <button class="filter-btn" onclick="setFilter('ecommerce',this)">E-Commerce</button>
             <button class="filter-btn" onclick="setFilter('hospitality',this)">Hospitality</button>
+            <button class="filter-btn" onclick="setFilter('music',this)">Music</button>
+            <button class="filter-btn" onclick="setFilter('media',this)">Media</button>
             <button class="filter-btn" onclick="setFilter('services',this)">Services</button>
             <button class="filter-btn" onclick="setFilter('enterprise',this)">Enterprise</button>
+            <button class="filter-btn" onclick="setFilter('tools',this)">Tools</button>
           </div>
         </div>
       </div>
@@ -1061,6 +1064,42 @@
     ];
 
     const demos = [
+      {
+        icon:"🎵",
+        title:"MusicStudioWeb",
+        category:"music",
+        badge:"Featured",
+        desc:"Official website and management system for a record label and music production studio, showcasing artists, releases, events, and studio services.",
+        pitch:["Record Labels","Music Studios","Artist Management"],
+        link:"https://yashwantreddy94.github.io/MusicStudioWeb/"
+      },
+      {
+        icon:"🎤",
+        title:"ArtistVerse - Music Artist Portfolio Website",
+        category:"music",
+        badge:"Featured",
+        desc:"A modern and visually immersive music artist website designed to create a strong digital presence for musicians, bands, DJs, and entertainment brands, with album promotion, event announcements, merchandise showcases, and fan engagement.",
+        pitch:["Musicians","Bands","Entertainment Brands"],
+        link:"https://yashwantreddy94.github.io/MusicArtistWeb/"
+      },
+      {
+        icon:"🎬",
+        title:"Creative Media Agency Website",
+        category:"media",
+        badge:"Featured",
+        desc:"A modern and professional website for Nexyz Group, a creative agency specializing in cinematic film production, drone services, photography, video editing, branding, and digital media solutions.",
+        pitch:["Creative Agencies","Production Houses","Media Studios"],
+        link:"https://yashwantreddy94.github.io/CreativeMediaAgencyWebsite/"
+      },
+      {
+        icon:"🔳",
+        title:"GenerateQRcode-DigitalVcard",
+        category:"tools",
+        badge:"Featured",
+        desc:"A simple and responsive web application for creating QR Code-based Digital Business Cards (vCards), allowing users to instantly view and save contact information by scanning the code.",
+        pitch:["Digital vCards","Professionals","Networking Tools"],
+        link:"https://yashwantreddy94.github.io/GenerateQRcode-DigitalVcard/"
+      },
       {
         icon:"🛒",
         title:"E-Commerce Store",
